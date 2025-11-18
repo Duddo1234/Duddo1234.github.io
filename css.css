@@ -2,126 +2,48 @@
   font-family: 'Exan';
   src: URL('fonts/Exan-Regular.ttf') format('truetype');
 }
-
 @font-face {
   font-family: 'Niconne';
   src: URL('fonts/ArchitectsDaughter-Regular.ttf') format('truetype');
 }
-
 @font-face {
   font-family: 'Lato';
   src: URL('fonts/VarelaRound-Regular.ttf') format('truetype');
 }
-
-html, body {
+@font-face {
+  font-family: 'LatoL';
+  src: URL('fonts/VarelaRound-Regular.ttf') format('truetype');
+}
+body, html {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   min-height: 100%;
-  font-family: Lato, sans-serif;
-  color: white;
-  background-color: #000;
-}
-
-.center {
-  text-align: center;
-}
-
+  min-width: 100%;
+  }
 h2 {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(153, 153, 153, 0.2);
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-bottom: 1%;
   margin: 0;
-  padding: 1rem;
-  font-family: Exan, sans-serif;
-  font-size: 2rem;
+  font-family: Exan;
   color: white;
-  text-align: center;
-  letter-spacing: 1px;
-}
+  font-size: 1.5vw;
+ }
+ .clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+ .clearfix {
+   display: block;
+   padding-bottom: 1%;
+ }
 
-.section-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem;
-  gap: 2rem;
-  background-color: rgba(0,0,0,0.9);
-}
-
-.gif-box {
-  width: min(420px, 90vw);
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.message {
-  max-width: 600px;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  padding: 1rem;
-  font-family: Lato, sans-serif;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.7rem 1.6rem;
-  margin-top: 1rem;
-  border-radius: 10px;
-  background: rgba(255,255,255,0.2);
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: 0.25s ease;
-}
-
-.button:hover {
-  background: rgba(255,255,255,0.35);
-  transform: scale(1.05);
-}
-
-.hero-title {
-  font-family: Exan, sans-serif;
-  font-size: 10vw;
-  text-shadow: 0 0 20px rgba(0,0,0,0.6);
-  margin: 0;
-}
-
-.hero-subtitle {
-  font-family: Exan, sans-serif;
-  font-size: 2.2vw;
-  margin-top: 10px;
-  text-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-.hero-from {
-  font-family: Niconne, cursive;
-  font-size: 2.2vw;
-  opacity: 0.8;
-  margin-top: 2.5rem;
-}
-
-@media (max-width: 800px) {
-  h2 {
-    font-size: 1.7rem;
-  }
-
-  .message {
-    font-size: 1.1rem;
-  }
-
-  .hero-title {
-    font-size: 13vw;
-  }
-
-  .hero-subtitle,
-  .hero-from {
-    font-size: 4vw;
-  }
-}
-
-@media (max-height: 600px) {
-  p {
+@media only screen and (max-height: 600px) {
+  p{
     font-size: 2.5vw;
   }
 }
